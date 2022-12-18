@@ -8,7 +8,11 @@ import { Typography } from "antd";
 import { getFirebase } from "../../firebase";
 import { addBrandListing, addBrandUser } from "./hooks";
 
-import { StyledButton, PageContainer } from "../../styled-components";
+import {
+  StyledButton,
+  PageContainer,
+  StyledStickyContainer,
+} from "../../styled-components";
 import Spinner from "../../shared-components/Spinner";
 
 // images
@@ -105,13 +109,18 @@ const OnboardingPage = () => {
             )}
           </>
         )}
-
-        <StyledButton
-          onClick={() => setStep((prev) => prev + 1)}
-          loading={loading}
+        <StyledStickyContainer
+          style={{
+            marginBottom: theme.space[0],
+          }}
         >
-          Setup Store
-        </StyledButton>
+          <StyledButton
+            onClick={() => setStep((prev) => prev + 1)}
+            loading={loading}
+          >
+            Setup Store
+          </StyledButton>
+        </StyledStickyContainer>
       </div>
     </StyledContainer>
   );

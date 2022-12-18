@@ -5,7 +5,13 @@ const CACHE_NAME = "Seller App";
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["./Favicon.png", "./logo-192.png", "./logo-512.png"];
+let resourcesToCache = [
+  "/Favicon.png",
+  "/logo-192.png",
+  "/logo-512.png",
+  "/index.html",
+  "/"
+];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(

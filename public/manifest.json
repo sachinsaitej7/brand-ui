@@ -21,10 +21,10 @@
   "background_color": "#ffffff",
   "screenshots": [
     {
-      "src": "setup-store.png",
-      "sizes": "360x640",
+      "src": "listed-products.png",
+      "sizes": "360x724",
       "type": "image/png",
-      "description": "Setup your store",
+      "description": "Seller orders",
       "form-factor": "narrow"
     },
     {
@@ -35,10 +35,10 @@
       "form-factor": "narrow"
     },
     {
-      "src": "listed-products.png",
-      "sizes": "360x724",
+      "src": "setup-store.png",
+      "sizes": "360x640",
       "type": "image/png",
-      "description": "Seller orders",
+      "description": "Setup your store",
       "form-factor": "narrow"
     }
   ]

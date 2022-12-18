@@ -11,7 +11,7 @@ import Spinner from "../../shared-components/Spinner";
 import EmptyPage from "./empty-page";
 import AddNew from "./add-new";
 import Products from "./products";
-import { StyledButton } from "../../styled-components";
+import { StyledButton, StyledStickyContainer } from "../../styled-components";
 
 const { StoreContext } = store;
 
@@ -71,22 +71,14 @@ const StorePage = () => {
           <Products />
         )}
       </div>
-      <div
-        style={{
-          padding: theme.space[5],
-          position: "fixed",
-          bottom: theme.space[0],
-          backgroundColor: theme.bg.default,
-          width: "100%",
-        }}
-      >
+      <StyledStickyContainer>
         <StyledButton
           style={{ width: "100%", marginTop: theme.space[0] }}
           onClick={() => setAddNew(true)}
         >
           List a product
         </StyledButton>
-      </div>
+      </StyledStickyContainer>
     </StyledContainer>
   );
 };

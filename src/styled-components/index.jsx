@@ -43,3 +43,15 @@ export const StyledInput = styled(Input)`
     line-height: 16px;
   }
 `;
+
+export const StyledStickyContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  max-width: 768px;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: ${(props) => props.theme.bg.default};
+  padding: ${(props) => `${props.theme.space[3]} ${props.theme.space[5]}`};
+  box-shadow: 16px 8px 0px rgba(0, 0, 0, 0.08);
+  bottom: ${(props) => props.theme.space[0]};
+`;

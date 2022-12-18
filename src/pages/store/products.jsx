@@ -47,17 +47,17 @@ const Products = () => {
   const [instantProducts, iLoading] = useInstantProducts(store?.id);
   const [onDemandProducts, dLoading] = useOnDemandProducts(store?.id);
 
+
   useEffect(() => {
-    instantProducts && setProducts(instantProducts);
-  }, [instantProducts]);
+    if (active === "instant") {
+      instantProducts && setProducts(instantProducts);
+    } else {
+      onDemandProducts && setProducts(onDemandProducts);
+    }
+  }, [instantProducts, onDemandProducts, active]);
 
   const handleActive = (type) => {
     setActive(type);
-    if (type === "instant") {
-      setProducts(instantProducts);
-    } else {
-      setProducts(onDemandProducts);
-    }
   };
 
   return (

@@ -1,4 +1,4 @@
-Dec 18, 2022 1:25:48 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+Dec 18, 2022 3:06:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
 INFO: Started WebSocket server on ws://127.0.0.1:9150
 API endpoint: http://127.0.0.1:8080
 If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
@@ -7,23 +7,15 @@ If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment
 
 Dev App Server is now running.
 
-Dec 18, 2022 3:38:48 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:38:51 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:18 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:18 AM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
-INFO: channel closed
-Dec 18, 2022 3:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:19 AM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+Dec 18, 2022 3:08:14 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
 SEVERE: Failed to generate rules context for request
 com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
@@ -86,227 +78,113 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datas
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
 	... 49 more
 
-Dec 18, 2022 3:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:35 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:39:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:40:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:40:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:40:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:09:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:40:40 AM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose
-INFO: channel closed
-Dec 18, 2022 3:41:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:10:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:41:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:11:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:41:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:12:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:41:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:13:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:41:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:42:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:14:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:15:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:43:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:44:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:45:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:17:40 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:18:40 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:46:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:47:44 AM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose
-INFO: channel closed
-Dec 18, 2022 3:48:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:49:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:50:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:51:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:52 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:52 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:52 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:52 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:52 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:52:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:01 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:01 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:01 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:01 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:40 AM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+Dec 18, 2022 3:19:39 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
 SEVERE: Failed to generate rules context for request
 com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
@@ -369,346 +247,37 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datas
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
 	... 49 more
 
-Dec 18, 2022 3:53:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:53:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:19:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:54:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:55:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:55:03 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:55:03 AM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose
-INFO: channel closed
-Dec 18, 2022 3:55:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:56:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:57:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:58:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 3:59:20 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:00:20 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:01:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:02:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:03:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:04:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:05:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:06:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:07:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:08:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:09:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:10:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:11:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:12:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:13:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:14:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:14:54 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:15:54 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:16:54 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:17:54 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:18:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:19:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:26 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
-INFO: Connected to new websocket client
-Dec 18, 2022 4:20:26 AM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
-SEVERE: Failed to generate rules context for request
-com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
-	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
-	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
-	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
-	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
-	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.generateRequestBacklog(BufferingRequestListener.java:97)
-	at com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler$1.userEventTriggered(WebSocketChannelHandler.java:49)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:346)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:332)
-	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:324)
-	at io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandshakeHandler$1.operationComplete(WebSocketServerProtocolHandshakeHandler.java:109)
-	at io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandshakeHandler$1.operationComplete(WebSocketServerProtocolHandshakeHandler.java:98)
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:184)
-	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95)
-	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30)
-	at io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandshakeHandler.channelRead(WebSocketServerProtocolHandshakeHandler.java:98)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
-	at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:99)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
-	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
-	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
-	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
-	... 53 more
-
-Dec 18, 2022 4:20:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected HTTP/2 connection.
-Dec 18, 2022 4:20:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:43 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:20:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:11 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:18 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:18 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:23 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:26 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:27 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:28 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:29 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:21:42 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:22:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:22:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:23:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:23:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:24:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:24:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:25:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:25:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:26:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:26:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:27:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:27:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:28:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:28:40 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:29:12 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:29:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:29:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:30:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:30:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:31:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:31:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:32:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:32:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:33:25 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:33:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:34:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:34:19 AM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
-INFO: channel closed
-Dec 18, 2022 4:34:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:34:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:34:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:35:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:35:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:44 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:36:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:37:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:37:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:38:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:38:58 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:39:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:37 AM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+Dec 18, 2022 3:20:19 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
 SEVERE: Failed to generate rules context for request
 com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
@@ -771,115 +340,1033 @@ Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datas
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
 	... 49 more
 
-Dec 18, 2022 4:40:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:39 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:40:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:20:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:41:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:21:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:41:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:42:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:42:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:43:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:43:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:44:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:44:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:45:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:45:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:46:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:46:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:47:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:47:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:48:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:48:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:49:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:49:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:50:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:50:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:51:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:51:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:52:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:52:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Dec 18, 2022 4:52:14 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError
-INFO: operation failed: failed to write export
-com.google.cloud.datastore.core.exception.DatastoreException: failed to write export
-	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.exportData(CloudFirestoreV1.java:803)
-	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1Router.exportData(CloudFirestoreV1Router.java:226)
-	at com.google.cloud.datastore.emulator.firestore.EmulatorAuxiliaryGrpcAdapter$1.lambda$exportData$3(EmulatorAuxiliaryGrpcAdapter.java:98)
-	at com.google.cloud.datastore.emulator.firestore.EmulatorAuxiliaryGrpcAdapter.unary(EmulatorAuxiliaryGrpcAdapter.java:49)
-	at com.google.cloud.datastore.emulator.firestore.EmulatorAuxiliaryGrpcAdapter$1.exportData(EmulatorAuxiliaryGrpcAdapter.java:95)
-	at com.google.firestore.emulator.v1.FirestoreEmulatorGrpc$MethodHandlers.invoke(FirestoreEmulatorGrpc.java:631)
-	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
-	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
-	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
-	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
-	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
-	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
-	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
-	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
-	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
-	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:355)
-	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:867)
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.FileNotFoundException: firebase-export-1671319334355LpiB9P/firestore_export/all_namespaces/all_kinds/output-0 (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
-	at com.google.cloud.datastore.util.leveldb.ExportImportUtil.writeEntitiesToFile(ExportImportUtil.java:201)
-	at com.google.cloud.datastore.util.leveldb.ExportImportUtil.exportEntitiesForSpec(ExportImportUtil.java:179)
-	at com.google.cloud.datastore.util.leveldb.ExportImportUtil.exportEntities(ExportImportUtil.java:111)
-	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.exportData(CloudFirestoreV1.java:801)
-	... 21 more
+Dec 18, 2022 3:22:11 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
 
-Dec 18, 2022 4:52:14 AM io.gapi.emulators.netty.HttpHandler$1 onError
-INFO: Exception when handling request: INTERNAL: failed to write export
-Dec 18, 2022 4:52:27 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+Dec 18, 2022 3:22:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
-*** shutting down gRPC server since JVM is shutting down
-*** server shut down
-221218 04:52:35.543:I 1 [main] [com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer.stop:80] Stopping WebSocket server...
-221218 04:52:35.547:I 246 [nioEventLoopGroup-3-1] [com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler.channelClosed:81] Websocket client disconnected
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:22:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:23:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:24:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:25:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:19 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:20 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
+
+Dec 18, 2022 3:26:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:26:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:27:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:37 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:28:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:29:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:30:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:30:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:30:22 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreWriteHandler onClose
+INFO: channel closed
+Dec 18, 2022 3:30:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:31:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:33:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:34:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:34:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:34:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:34:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:34:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:35:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:58 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
+
+Dec 18, 2022 3:36:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:36:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:21 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:52 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
+
+Dec 18, 2022 3:37:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:37:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:38:54 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
+
+Dec 18, 2022 3:38:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:39:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:39:54 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+Dec 18, 2022 3:40:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:06 PM com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest toJSON
+SEVERE: Failed to generate rules context for request
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3975)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3998)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4968)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager.lambda$addDynamicLookupFunctionsAndVariables$4(LookupManager.java:228)
+	at com.google.common.base.Suppliers$NonSerializableMemoizingSupplier.get(Suppliers.java:184)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.contextAsJson(EmulatorRequest.java:97)
+	at com.google.cloud.datastore.emulator.firestore.websocket.EmulatorRequest.toJSON(EmulatorRequest.java:69)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.publish(BufferingRequestListener.java:86)
+	at com.google.cloud.datastore.emulator.firestore.websocket.BufferingRequestListener.afterRulesEvaluation(BufferingRequestListener.java:65)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator$1.afterPermissionEvaluation(EmulatorRuleClient.java:103)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$afterPermissionEvaluation$5(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.lambda$tryInvoke$10(CompositeListener.java:118)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:446)
+	at com.google.firebase.rules.runtime.impl.CompositeListener.afterPermissionEvaluation(CompositeListener.java:83)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:166)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator$2.onSuccess(DefaultEvaluator.java:163)
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1324)
+	at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:32)
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1276)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:764)
+	at com.google.common.util.concurrent.FluentFuture$TrustedFuture.addListener(FluentFuture.java:122)
+	at com.google.common.util.concurrent.Futures.addCallback(Futures.java:1291)
+	at com.google.firebase.rules.runtime.impl.DefaultEvaluator.evaluate(DefaultEvaluator.java:161)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRuleClient$EmulatorRuleEvaluator.evaluate(EmulatorRuleClient.java:84)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.evaluate(SinglePhaseRulesAuthorizer.java:481)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResource(SinglePhaseRulesAuthorizer.java:219)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkQueryResources(SinglePhaseRulesAuthorizer.java:194)
+	at com.google.cloud.datastore.core.auth.rules.SinglePhaseRulesAuthorizer.checkAccess(SinglePhaseRulesAuthorizer.java:123)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.lambda$checkQuery$2(EmulatorRulesAuthorizer.java:191)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:264)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkQuery(EmulatorRulesAuthorizer.java:188)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.ruleAuthorizeAndReadEntities(CloudFirestoreV1.java:1199)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.snapshotQuery(CloudFirestoreV1.java:1129)
+	at com.google.cloud.datastore.emulator.impl.watch.ListenStreamManager.addQueryTargets(ListenStreamManager.java:120)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.addTarget(CloudFirestoreV1ListenStream.java:285)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:164)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1ListenStream.onNext(CloudFirestoreV1ListenStream.java:57)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:174)
+	at com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler.onMessage(FirestoreV1WebChannelAdapter.java:144)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.onMessage(ChannelInternalImpl.java:525)
+	at com.google.net.webchannel.server.v8.ForwardChannel.deliverMessage(ForwardChannel.java:114)
+	at com.google.net.webchannel.server.v8.ForwardChannel.processPendingRequest(ForwardChannel.java:93)
+	at com.google.net.webchannel.server.v8.ForwardChannel.consume(ForwardChannel.java:67)
+	at com.google.net.webchannel.server.v8.ForwardChannel.add(ForwardChannel.java:60)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handleRequestBody(ChannelInternalImpl.java:290)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.processSessionRequest(ChannelInternalImpl.java:357)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.handle(ChannelInternalImpl.java:172)
+	at com.google.net.webchannel.server.v8.ChannelInternalImpl.consume(ChannelInternalImpl.java:91)
+	at com.google.net.webchannel.server.common.ChannelProcessor.run(ChannelProcessor.java:86)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.google.cloud.datastore.core.rep.Entity.propertyMap()" because "entity" is null
+	at com.google.cloud.datastore.core.auth.rules.EntityToExpressionValueConverter.convert(EntityToExpressionValueConverter.java:109)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:325)
+	at com.google.cloud.datastore.core.auth.rules.LookupManager$LookupCaches$1.load(LookupManager.java:319)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3541)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2276)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2153)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2043)
+	... 49 more
+
+Dec 18, 2022 3:40:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Dec 18, 2022 3:40:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.

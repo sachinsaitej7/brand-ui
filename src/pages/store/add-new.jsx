@@ -19,6 +19,7 @@ import {
   PageContainer,
   StyledInput,
   StyledButton,
+  StyledStickyContainer,
 } from "../../styled-components";
 import store from "../../store";
 import UploadImages from "../../shared-components/UploadImages";
@@ -198,10 +199,16 @@ export default function AddNew({ store }) {
         </Typography.Title>
         <HashTags onChange={setSelectedHashTags} />
         <Typography.Text
+          style={{ color: "#8C8C8C", marginTop: theme.space[4] }}
+        >
+          eg: #cotton, #summer, #winter, #tshirt, #jeans, #shoes, #formal,
+          #casual, #saree
+        </Typography.Text>
+        <Typography.Text
           style={{
             color: "#8C8C8C",
             display: "inline-block",
-            marginTop: theme.space[4],
+            // marginTop: theme.space[2],
           }}
         >
           Adding additional product info as hashtags help us improve our search
@@ -288,13 +295,8 @@ export default function AddNew({ store }) {
           right fit
         </Typography.Text>
       </StyledCard>
-      <StyledCard
+      <StyledStickyContainer
         style={{
-          padding: theme.space[5],
-          position: "fixed",
-          bottom: theme.space[0],
-          backgroundColor: theme.bg.default,
-          width: "100%",
           marginBottom: theme.space[0],
         }}
       >
@@ -305,7 +307,7 @@ export default function AddNew({ store }) {
         >
           List product
         </StyledButton>
-      </StyledCard>
+      </StyledStickyContainer>
       <FilterDrawer open={open} onClose={() => setOpen(false)}>
         <div>
           {values.map((value) => {
