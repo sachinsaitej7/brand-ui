@@ -3,13 +3,43 @@
   "name": "Seller App",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo-192.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "/home",
+  "scope": "/",
+  "display": "minimal-ui",
+  "theme_color": "#015850",
+  "description": "Quick Commerce is a platform that allows you to sell your products online and deliver them within 24 hours.",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "setup-store.png",
+      "sizes": "360x640",
+      "type": "image/png",
+      "description": "Setup your store",
+      "form-factor": "narrow"
+    },
+    {
+      "src": "seller-home-now.png",
+      "sizes": "360x714",
+      "type": "image/png",
+      "description": "Seller home",
+      "form-factor": "narrow"
+    },
+    {
+      "src": "listed-products.png",
+      "sizes": "360x724",
+      "type": "image/png",
+      "description": "Seller orders",
+      "form-factor": "narrow"
+    }
+  ]
 }

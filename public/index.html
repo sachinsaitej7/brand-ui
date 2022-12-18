@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/Favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1"/>
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#015850" />
     <meta
       name="description"
-      content="Seller app"
+      content="Quick Commerce is a platform that allows you to sell your products online and deliver them within 24 hours."
     />
       <meta name="keywords" content="Delivery within 24 hours, Fashion, Quick Commerce, same delivery order">
     <meta name="author" content="AARAM NETWORKS PRIVATE LIMITED">
@@ -45,4 +45,11 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() { console.log("Tada! Your service worker is now registered"); });
+    }
+</script>
 </html>
