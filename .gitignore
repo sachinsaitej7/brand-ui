@@ -31,3 +31,5 @@ yarn-error.log*
 /mock_data
 
 /ui-debug.log
+
+firebase-debug.log
