@@ -1,5 +1,6 @@
 import slugify from "slugify";
 import omit from "lodash/omit";
+import isEmpty from "lodash/isEmpty";
 
 export const createProductData = (data) => {
   return {
@@ -29,7 +30,7 @@ export const createProductData = (data) => {
 
 export const validateProductData = (data) => {
   let message = "";
-  if (!data.images || data.images.length === 0) {
+  if (!data.images || isEmpty(data.images)) {
     message = "Images are required";
     return message;
   }
@@ -45,7 +46,12 @@ export const validateProductData = (data) => {
     message = "Hash Tags are required";
     return message;
   }
-  if (!data.category) {
+  if (!data.category || isEmpty(data.category)) {
+    message = "Category is required";
+    return message;
+  }
+  if (!data.subcategory || isEmpty(data.subcategory)) {
+    // change later
     message = "Category is required";
     return message;
   }

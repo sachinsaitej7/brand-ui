@@ -86,7 +86,7 @@ export default function AddNew({ store }) {
       name: nameRef.current.input.value,
       price: +priceRef.current.input.value,
       category: categories?.find((c) => selectedSubcategory?.parentId === c.id),
-      subCategory: selectedSubcategory,
+      subcategory: selectedSubcategory,
       sizes: selectedSizes.map((size) => ({
         ...size,
         sizeGuide,
