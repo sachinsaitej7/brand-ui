@@ -9,8 +9,7 @@ let resourcesToCache = [
   "/Favicon.png",
   "/logo-192.png",
   "/logo-512.png",
-  "/index.html",
-  "/"
+  "/logo.png",
 ];
 
 self.addEventListener("install", (e) => {
