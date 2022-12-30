@@ -1,11 +1,13 @@
 import React, { useState, useRef, useContext } from "react";
 import styled, { useTheme } from "styled-components";
-import { Typography, Radio, notification } from "antd";
-// import antd icons for delete
-import { DeleteOutlined } from "@ant-design/icons";
+import { Typography, Radio, App, Divider } from "antd";
 
-//import right arrow icon
+//images
+import { CloseOutlined } from "@ant-design/icons";
+import { DeleteOutlined } from "@ant-design/icons";
 import { ReactComponent as RightArrow } from "../../assets/common/chevron-right.svg";
+import { ReactComponent as LeftArrow } from "../../assets/common/arrow-left.svg";
+
 import HashTags from "../../shared-components/HashTags";
 
 import {
@@ -21,19 +23,45 @@ import {
   StyledButton,
   StyledStickyContainer,
 } from "../../styled-components";
+
 import store from "../../store";
 import UploadImages from "../../shared-components/UploadImages";
 import FilterDrawer from "../../shared-components/Drawer";
 import { validateProductData } from "./utils";
 
-const { StoreContext } = store;
+const TopBarContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  max-width: 768px;
+  height: 50px;
+  background-color: ${(props) => props.theme.bg.default};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: ${(props) => `${props.theme.space[2]} ${props.theme.space[5]}`};
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+`;
 
 const StyledContainer = styled(PageContainer)`
   padding: ${(props) => props.theme.space[0]};
-  padding-bottom: ${(props) => props.theme.space[6]}
-  min-height: calc(100vh - 64px);
+  position: absolute;
+  padding-bottom: ${(props) => props.theme.space[9]};
+  min-height: 100vh;
   background-color: ${(props) => props.theme.bg.dark};
-  margin-bottom: ${(props) => props.theme.space[9]};
+  animation: slide-up 0.5s ease-in-out;
+  z-index: 100;
+  top: 0;
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 `;
 
 const StyledCard = styled.div`
@@ -54,10 +82,14 @@ const StyledCard = styled.div`
   }
 `;
 
+const { StoreContext } = store;
+
 export default function AddNew({ store }) {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const { setAddNew } = useContext(StoreContext);
+  const { message } = App.useApp();
+
   const [values, setValues] = useState([]);
   const [type, setType] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
@@ -98,27 +130,18 @@ export default function AddNew({ store }) {
     };
     const errorMessage = validateProductData(productData);
     if (errorMessage) {
-      notification.error({
-        message: "Error",
-        description: errorMessage,
-      });
+      message.error(errorMessage);
       setLoading(false);
       return;
     }
     try {
       const id = await addProduct(productData);
       await addProductVariants(productData, id);
-      notification.success({
-        message: "Success",
-        description: "Product added successfully",
-      });
+      message.success("Product added successfully");
       setAddNew(false);
     } catch (error) {
       console.log(error);
-      notification.error({
-        message: "Error",
-        description: "Something went wrong",
-      });
+      message.error("Something went wrong, please try again later");
     }
     setLoading(false);
   };
@@ -135,24 +158,36 @@ export default function AddNew({ store }) {
   };
 
   const onDrawerItemClick = (type, value) => {
-    if (type === "category") handleCategorySelect(value);
-    else if (type === "size") handleSizeSelect(value);
+    if (type === "category") {
+      if (!value.children) handleCategorySelect(value);
+      else setValues(value.children);
+    } else if (type === "size") {
+      if (!value.children) handleSizeSelect(value);
+      else setValues(value.children);
+    }
   };
 
   const handleCardClick = (type) => {
-    if (type === "category") subcategories && setValues(subcategories);
-    else if (type === "size") {
-      const allValues = sizes.reduce((acc, size) => {
+    if (type === "category") {
+      const allValues = categories.map((category) => ({
+        ...category,
+        children: subcategories.filter(
+          (subcategory) => subcategory.parentId === category.id
+        ),
+      }));
+      setValues(allValues);
+    } else if (type === "size") {
+      const allValues = sizes.map((size) => {
         const { values } = size;
-        return [
-          ...acc,
-          ...values.map((value) => ({
+        return {
+          ...size,
+          children: values.map((value) => ({
             ...size,
             label: value,
             values: value,
           })),
-        ];
-      }, []);
+        };
+      });
       setValues(allValues);
     }
     setType(type);
@@ -176,6 +211,12 @@ export default function AddNew({ store }) {
 
   return (
     <StyledContainer>
+      <TopBarContainer>
+        <Typography.Title level={4} style={{ margin: 0 }}>
+          Add new product
+        </Typography.Title>
+        <CloseOutlined onClick={() => setAddNew(false)} />
+      </TopBarContainer>
       <StyledCard>
         <Typography.Title level={4}>
           Product images * ({images.length}/4)
@@ -191,7 +232,12 @@ export default function AddNew({ store }) {
       </StyledCard>
       <StyledCard>
         <Typography.Title level={4}>Product Price *</Typography.Title>
-        <StyledInput type='number' placeholder='₹ MRP' ref={priceRef} />
+        <StyledInput
+          type='number'
+          prefix='₹'
+          placeholder='MRP'
+          ref={priceRef}
+        />
       </StyledCard>
       <StyledCard>
         <Typography.Title level={4}>
@@ -199,16 +245,9 @@ export default function AddNew({ store }) {
         </Typography.Title>
         <HashTags onChange={setSelectedHashTags} />
         <Typography.Text
-          style={{ color: "#8C8C8C", marginTop: theme.space[4] }}
-        >
-          eg: #cotton, #summer, #winter, #tshirt, #jeans, #shoes, #formal,
-          #casual, #saree
-        </Typography.Text>
-        <Typography.Text
           style={{
             color: "#8C8C8C",
             display: "inline-block",
-            // marginTop: theme.space[2],
           }}
         >
           Adding additional product info as hashtags help us improve our search
@@ -234,7 +273,7 @@ export default function AddNew({ store }) {
         </div>
       </StyledCard>
       <StyledCard>
-        <Typography.Title level={4}>Size </Typography.Title>
+        <Typography.Title level={4}>Size* </Typography.Title>
         {selectedSizes.map((size) => {
           return (
             <div
@@ -269,9 +308,16 @@ export default function AddNew({ store }) {
             </div>
           );
         })}
+        {selectedSizes.length !== 0 && (
+          <Divider style={{ margin: theme.space[2] + " 0" }} />
+        )}
         <Typography.Text
           strong
-          style={{ cursor: "pointer" }}
+          style={{
+            cursor: "pointer",
+            marginTop: theme.space[5],
+            display: "block",
+          }}
           onClick={() => handleCardClick("size")}
         >
           + Add new size
@@ -308,9 +354,27 @@ export default function AddNew({ store }) {
           List product
         </StyledButton>
       </StyledStickyContainer>
-      <FilterDrawer open={open} onClose={() => setOpen(false)}>
+      <FilterDrawer
+        open={open}
+        onClose={() => setOpen(false)}
+        title={
+          <div style={{ display: "flex" }}>
+            <LeftArrow width={20} onClick={() => handleCardClick(type)} />
+            <Typography.Title
+              level={4}
+              style={{ margin: theme.space[0] + " " + theme.space[3] }}
+            >
+              {type === "category" ? "Select category" : "Select size"}
+            </Typography.Title>
+          </div>
+        }
+      >
         <div>
           {values.map((value) => {
+            const disabled =
+              type === "category"
+                ? selectedSubcategory?.id === value.id
+                : selectedSizes.some((size) => size.label === value.label);
             return (
               <div
                 key={value.id + value.label}
@@ -319,11 +383,17 @@ export default function AddNew({ store }) {
                   minHeight: "40px",
                   display: "flex",
                   alignItems: "center",
+                  justifyContent: "space-between",
                   padding: theme.space[5],
                 }}
-                onClick={() => onDrawerItemClick(type, value)}
+                onClick={() => !disabled && onDrawerItemClick(type, value)}
               >
-                <Typography.Text>{value.label || value.name}</Typography.Text>
+                <Typography.Text disabled={disabled}>
+                  {value.label || value.name}
+                </Typography.Text>
+                {value.children && (
+                  <RightArrow width='16px' disabled={disabled} />
+                )}
               </div>
             );
           })}

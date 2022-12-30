@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, Input } from "antd";
+import { Button, Input, Tag } from "antd";
 
 export const PageContainer = styled.div`
   width: 100%;
@@ -15,6 +15,7 @@ export const StyledButton = styled(Button)`
   border: none;
   border-radius: ${(props) => props.theme.borderRadius[2]};
   padding: ${(props) => `${props.theme.space[3]} ${props.theme.space[4]}`};
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 40px;
   &.ant-btn:hover {
@@ -36,7 +37,9 @@ export const StyledButton = styled(Button)`
 export const StyledInput = styled(Input)`
   width: 100%;
   border: 1px solid rgba(41, 41, 41, 0.32);
-  border-radius: ${(props) => props.borderRadius || props.theme.borderRadius[2]};
+  height: 40px;
+  border-radius: ${(props) =>
+    props.borderRadius || props.theme.borderRadius[2]};
   padding: ${(props) => `${props.theme.space[4]} ${props.theme.space[5]}`};
   :placeholder-shown {
     font-size: ${(props) => props.theme.fontSizes[1]};
@@ -51,7 +54,40 @@ export const StyledStickyContainer = styled.div`
   position: fixed;
   box-sizing: border-box;
   background-color: ${(props) => props.theme.bg.default};
-  padding: ${(props) => `${props.theme.space[3]} ${props.theme.space[5]}`};
-  box-shadow: 16px 8px 0px rgba(0, 0, 0, 0.08);
+  padding: ${(props) => `${props.theme.space[5]}`};
+  box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.08);
   bottom: ${(props) => props.theme.space[0]};
+  left: 50%;
+  margin-left: -50%;
+  z-index: 100;
+
+  @media (min-width: 769px) {
+    left: -10%;
+    margin-left: 20%;
+  }
+
+  @media (min-width: 1025px) {
+    left: -50%;
+    margin-left: 50%;
+  }
+`;
+
+export const StoreNameContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    width: 56px;
+    height: 56px;
+    border-radius: ${(props) => props.theme.borderRadius[2]};
+  }
+`;
+
+export const StyledTag = styled(Tag)`
+  margin: ${(props) => props.theme.space[2]};
+  padding: ${(props) => props.theme.space[2] + " " + props.theme.space[3]};
+  border-radius: ${(props) => props.theme.borderRadius[3]};
+  font-weight: ${(props) => props.theme.fontWeights.normal};
+  font-size: ${(props) => props.theme.fontSizes[2]};
+  line-height: 14px;
 `;

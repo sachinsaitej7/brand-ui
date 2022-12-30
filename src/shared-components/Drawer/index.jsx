@@ -40,6 +40,7 @@ const FilterDrawer = ({
   onClose,
   open,
   children,
+  closable = false,
   title = "Select category",
 }) => {
   return (
@@ -50,7 +51,7 @@ const FilterDrawer = ({
         width={"100%"}
         onClose={onClose}
         open={open}
-        closable={false}
+        closable={closable}
         maskClosable={true}
         closeIcon={<StyledCloseIcon />}
         height={"580px"}

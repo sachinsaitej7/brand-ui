@@ -1,11 +1,6 @@
 import { getFirebase } from "../../firebase";
 
-import {
-  collection,
-  query,
-  where,
-  doc,
-} from "firebase/firestore";
+import { collection, query, where, orderBy, doc } from "firebase/firestore";
 
 import {
   useCollectionDataOnce,
@@ -32,7 +27,11 @@ export const useBrandUser = (id) => {
 
 // hook to get all brands with given ids array and disabled when not ids given
 export const useBrandsByIds = (ids = []) => {
-  const brandQuery = query(brandRef, where("__name__", "in", ids));
+  const brandQuery = query(
+    brandRef,
+    where("__name__", "in", ids.slice(0, 10)),
+    // orderBy("updatedAt", "desc")
+  );
   const data = useCollectionDataOnce(brandQuery);
   return data;
 };

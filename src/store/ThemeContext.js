@@ -2,8 +2,8 @@ import { createContext } from "react";
 
 export const ThemeContext = createContext({
   colors: {
-    primary: "#015850",
-    secondary: "#DAF2F0",
+    primary: "#31A683",
+    secondary: "#E6F3EF",
     black: "#000000",
     yellow: "#F2FFCB",
     white: "#FFFFFF",
@@ -13,8 +13,8 @@ export const ThemeContext = createContext({
     dark: "#292929",
     white: "#FFFFFF",
     light: "rgba(41, 41, 41, 0.5)",
-    primary: "#015850",
-    secondary: "#DAF2F0",
+    primary: "#31A683",
+    secondary: "#E6F3EF",
     black: "#000000",
   },
 
@@ -67,8 +67,8 @@ export const ThemeContext = createContext({
 
   bg: {
     default: "#FFFFFF",
-    primary: "#015850",
-    secondary: "#DAF2F0",
+    primary: "#31A683",
+    secondary: "#E6F3EF",
     yellow: "#F2FFCB",
     dark:"#E5E5E5",
     disabled: "rgba(41, 41, 41, 0.4)",

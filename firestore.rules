@@ -52,6 +52,10 @@ service cloud.firestore {
     match /brand/{brandId} {
       allow read: if true;
       allow write: if request.auth.uid != null;
+      match /privateData/{document=**} {
+        allow read: if true;
+        allow write: if request.auth.uid != null;
+      }
     }
 
     match /brandUser/{brandId} {

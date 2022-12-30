@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { isEmpty } from "@firebase/util";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { notification } from "antd";
+import { App } from "antd";
 
 import { getFirebase } from "../../firebase";
 import { useBrandUserByUid } from "./hooks";
@@ -14,20 +14,18 @@ import Stores from "./stores";
 const HomePage = () => {
   const navigate = useNavigate();
   const { auth } = getFirebase();
+  const { message } = App.useApp();
+
   const [user] = useAuthState(auth);
   const [data, loading, error] = useBrandUserByUid(user?.uid);
 
   useEffect(() => {
     if (loading) return;
     if (isEmpty(data) || error) {
-      error &&
-        notification.error({
-          message: "Error",
-          description: error?.message,
-        });
+      error && message.error(error?.message || "Something went wrong");
       navigate("/onboarding");
     }
-  }, [data, loading, error, navigate]);
+  }, [data, loading, error, navigate, message]);
 
   return (
     <PageContainer>

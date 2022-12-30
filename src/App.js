@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
-import { ConfigProvider } from "antd";
+import { ConfigProvider, App as AntdApp } from "antd";
 
 import HomePage from "./pages/home";
 import LoginPage from "./pages/login";
@@ -44,17 +44,23 @@ const App = () => {
     >
       <ThemeProvider theme={theme}>
         <StoreContext.Provider value={{ store, setStore, addNew, setAddNew }}>
-          <Container>
-            <WithTopAndBottom>
-              <Routes>
-                <Route path='/' exact element={<HomePage />} />
-                <Route path='/login' exact element={<LoginPage />} />
-                <Route path='/home' element={<StorePage />} />
-                <Route path='/onboarding' exact element={<OnboardingPage />} />
-                <Route path='*' element={<ErrorPage />} />
-              </Routes>
-            </WithTopAndBottom>
-          </Container>
+          <AntdApp>
+            <Container>
+              <WithTopAndBottom>
+                <Routes>
+                  <Route path='/' exact element={<HomePage />} />
+                  <Route path='/login' exact element={<LoginPage />} />
+                  <Route path='/home' element={<StorePage />} />
+                  <Route
+                    path='/onboarding'
+                    exact
+                    element={<OnboardingPage />}
+                  />
+                  <Route path='*' element={<ErrorPage />} />
+                </Routes>
+              </WithTopAndBottom>
+            </Container>
+          </AntdApp>
         </StoreContext.Provider>
       </ThemeProvider>
     </ConfigProvider>

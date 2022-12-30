@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
-import { Button, Form, Typography } from "antd";
+import { Button, Form, Typography, App } from "antd";
 
 // images
 import { CheckCircleOutlined } from "@ant-design/icons";
 
-import NotificationAPI from "../NotificationAPI";
 import { StyledInput } from "../../styled-components";
 
 const StyledButton = styled(Button)`
@@ -56,6 +55,7 @@ const LoginForm = ({ sendOtp = () => {}, verifyOtp = () => {} }) => {
   const inputRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(1);
+  const { message } = App.useApp();
 
   useEffect(() => {
     return () => {
@@ -72,12 +72,7 @@ const LoginForm = ({ sendOtp = () => {}, verifyOtp = () => {} }) => {
         setStep(2);
       })
       .catch(() => {
-        NotificationAPI({
-          type: "error",
-          message: "Something went wrong, try again later",
-          title: "Error",
-          placement: "top",
-        });
+        message.error("Something went wrong, try again later");
         setLoading(false);
       });
   };
@@ -91,12 +86,7 @@ const LoginForm = ({ sendOtp = () => {}, verifyOtp = () => {} }) => {
         setLoading(false);
       })
       .catch(() => {
-        NotificationAPI({
-          type: "warning",
-          message: "Invalid OTP, try again",
-          title: "Warning",
-          placement: "top",
-        });
+        message.warning("Invalid OTP, try again");
         setLoading(false);
       });
   };

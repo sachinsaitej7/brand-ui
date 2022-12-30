@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from "react";
 import styled, { useTheme } from "styled-components";
-import { Modal, Upload, notification } from "antd";
+import { Modal, Upload, App } from "antd";
 
 import { useUploadImage, useDeleteImage } from "./hooks";
 
 // images
 import { ReactComponent as UploadImagePlaceholder } from "../../assets/home/image-placeholder.svg";
 
-const StyledUpload = styled(Upload)``;
+const StyledUpload = styled(Upload)`
+  .ant-upload-select {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .ant-upload-list-item-container {
+    width: 56px !important;
+    height: 56px !important;
+  }
+`;
 
 const getBase64 = (file) =>
   new Promise((resolve, reject) => {
@@ -19,6 +28,8 @@ const getBase64 = (file) =>
 
 const UploadImages = ({ limit = 8, onSuccess }) => {
   const theme = useTheme();
+  const { message } = App.useApp();
+
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewImage, setPreviewImage] = useState("");
   const [previewTitle, setPreviewTitle] = useState("");
@@ -28,8 +39,8 @@ const UploadImages = ({ limit = 8, onSuccess }) => {
   const { deleteImage, deleteImageLoading } = useDeleteImage();
 
   useEffect(() => {
-    error && notification.error({ message: error.message });
-  }, [error]);
+    error && message.error(error.message);
+  }, [error, message]);
 
   useEffect(() => {
     if (!uploadImageLoading && !deleteImageLoading) {
@@ -61,15 +72,13 @@ const UploadImages = ({ limit = 8, onSuccess }) => {
     try {
       await deleteImage(file);
     } catch (err) {
-      notification.error({ message: err.message });
+      message.error(err.message);
     }
   };
 
   const beforeUpload = (file) => {
-    if (!["image/jpeg", "image/png"].includes(file.type)) {
-      notification.error({
-        message: `${file.name} is not a valid image type`,
-      });
+    if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+      message.error(`${file.name} is not a valid image type`);
       return null;
     }
     return true;
@@ -84,10 +93,8 @@ const UploadImages = ({ limit = 8, onSuccess }) => {
       };
       await uploadImage(file, { onSuccess, onProgress, onError: handleError });
     } catch (err) {
-      notification.error({
-        message: err.message,
-      });
-      console.log("err", err);
+      message.error(err.message);
+      console.log(err);
       onError(err);
     }
   };
@@ -114,7 +121,9 @@ const UploadImages = ({ limit = 8, onSuccess }) => {
         disabled={uploadImageLoading || deleteImageLoading}
         multiple
       >
-        {fileList.length >= limit ? null : <UploadImagePlaceholder />}
+        {fileList.length >= limit ? null : (
+          <UploadImagePlaceholder width={"56px"} height={"56px"} />
+        )}
       </StyledUpload>
       <Modal
         open={previewOpen}

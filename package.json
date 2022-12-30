@@ -6,12 +6,17 @@
     "src/index.tsx"
   ],
   "dependencies": {
+    "@sentry/react": "^7.28.1",
+    "@sentry/tracing": "^7.28.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "antd": "^5.0.6",
+    "antd": "^5.1.2",
     "firebase": "^9.15.0",
+    "framer-motion": "^8.0.2",
+    "geofire-common": "^6.0.0",
     "lodash": "^4.17.21",
+    "popmotion": "^11.0.5",
     "rc-tween-one": "^3.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

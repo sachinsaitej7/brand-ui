@@ -1,129 +1,129 @@
-import React, { useState, useEffect } from "react";
-import styled, { useTheme } from "styled-components";
-import { notification } from "antd";
-import { useNavigate } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
+import React, { useContext, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import styled from "styled-components";
 
-import { Typography } from "antd";
-import { getFirebase } from "../../firebase";
-import { addBrandListing, addBrandUser } from "./hooks";
+//context
+import Store from "../../store";
+import { OnboardingProvider, OnboardingContext } from "./context";
 
-import {
-  StyledButton,
-  PageContainer,
-  StyledStickyContainer,
-} from "../../styled-components";
-import Spinner from "../../shared-components/Spinner";
+//images
+import { ReactComponent as LeftArrow } from "../../assets/common/arrow-left.svg";
 
-// images
-import Eyes from "../../assets/home/eyes.jpg";
-import BrandForm from "./brand-form";
+import { PageContainer } from "../../styled-components";
+
+import Step0 from "./step-0";
+import Step1 from "./step-1";
+import Step2 from "./step-2";
+import Step3 from "./step-3";
+import Step4 from "./step-4";
+
+const variants = {
+  enter: (direction) => {
+    return {
+      x: direction > 0 ? 100 : -100,
+      opacity: 0,
+      height: "80vh",
+    };
+  },
+  center: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+    },
+  },
+  exit: (direction) => {
+    return {
+      x: direction < 0 ? 100 : -100,
+      opacity: 0,
+      display: "none",
+    };
+  },
+};
 
 const StyledContainer = styled(PageContainer)`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .back {
+    cursor: pointer;
+    margin-top: ${(props) => props.theme.space[8]};
+    width: 24px;
+  }
 `;
 
-const OnboardingPage = () => {
-  const theme = useTheme();
-  const navigate = useNavigate();
-  const [step, setStep] = useState(0);
-  const [name, setName] = useState("");
-  const [logo, setLogo] = useState("");
-  const [loading, setLoading] = useState(false);
+const StyledStepContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: ${(props) => props.theme.space[3] + " " + props.theme.space[0]};
+`;
 
-  const { auth } = getFirebase();
-  const [user] = useAuthState(auth);
+const StyledStep = styled.div`
+  background-color: ${(props) => (props.active ? "#3785FD" : "#D9D9D9")};
+  padding: 2.5px;
+  width: 23%;
+`;
+const { StoreContext } = Store;
+
+const OnboardingPage = () => {
+  const { step, prevStep, direction, setBrandId, setStep } =
+    useContext(OnboardingContext);
+  const { store } = useContext(StoreContext);
 
   useEffect(() => {
-    if (step === 2) {
-      name && createNewBrand();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step]);
-
-  const createNewBrand = async () => {
-    setLoading(true);
-    try {
-      const brandId = await addBrandListing({ name, logo });
-      await addBrandUser({ brandId, uid: user.uid });
-      navigate(`/`);
-      notification.success({
-        message: "Success",
-        description: "Your brand has been created.",
-      });
-    } catch (error) {
-      console.log(error);
-      notification.error({
-        message: "Error",
-        description: "Something went wrong. Please try again later.",
-      });
-    }
-    setLoading(false);
-  };
-
-  const handleUploadImages = (images) => {
-    if (images.length === 0) return;
-    const logo = images[0].response?.downloadURL;
-    setLogo(logo);
-  };
+    if (!store) return;
+    setBrandId(store.id);
+    if (!store.tags) setStep(2);
+    else if (!store.address) setStep(3);
+    else if (!store.status) setStep(4);
+  }, [setBrandId, setStep, store]);
 
   return (
     <StyledContainer>
-      <div
-        style={{
-          width: "100%",
-        }}
-      >
-        {loading ? (
-          <Spinner />
-        ) : (
-          <>
-            {step === 0 && (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+      {step === 0 && <Step0 />}
+      {step > 0 && (
+        <>
+          <StyledStepContainer>
+            {Array(4)
+              .fill(0)
+              .map((_, i) => {
+                return <StyledStep key={i} active={step > i}></StyledStep>;
+              })}
+          </StyledStepContainer>
+          {step > 1 && <LeftArrow className='back' onClick={prevStep} />}
+          <div style={{ width: "100%" }}>
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                key={step}
+                custom={direction}
+                variants={variants}
+                initial='enter'
+                animate='center'
+                exit='exit'
+                // transition={{
+                //   x: { type: "spring", stiffness: 30, damping: 10 },
+                // }}
               >
-                <img src={Eyes} alt='eyes' width='40px' height='40px' />
-                <Typography.Text
-                  strong
-                  style={{ fontSize: theme.fontSizes[4] }}
-                >
-                  Looks empty
-                </Typography.Text>
-                <Typography.Paragraph>
-                  Please setup your store
-                </Typography.Paragraph>
-              </div>
-            )}
-            {step === 1 && (
-              <BrandForm
-                handleUploadImages={handleUploadImages}
-                setName={setName}
-              />
-            )}
-          </>
-        )}
-        <StyledStickyContainer
-          style={{
-            marginBottom: theme.space[0],
-          }}
-        >
-          <StyledButton
-            onClick={() => setStep((prev) => prev + 1)}
-            loading={loading}
-          >
-            Setup Store
-          </StyledButton>
-        </StyledStickyContainer>
-      </div>
+                {step === 1 && <Step1 />}
+                {step === 2 && <Step2 />}
+                {step === 3 && <Step3 />}
+                {step === 4 && <Step4 />}
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </>
+      )}
     </StyledContainer>
   );
 };
 
-export default OnboardingPage;
+export default function Home() {
+  return (
+    <OnboardingProvider>
+      <OnboardingPage />
+    </OnboardingProvider>
+  );
+}

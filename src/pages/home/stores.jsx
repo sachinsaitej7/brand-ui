@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTheme } from "styled-components";
 
 import { useBrandsByIds } from "./hooks";
@@ -30,12 +31,15 @@ const StoreCard = ({ item }) => {
 
 const Stores = ({ ids = [] }) => {
   const theme = useTheme();
+  const navigate = useNavigate();
   const { setStore } = useContext(StoreContext);
   const [data, loading] = useBrandsByIds(ids);
 
   useEffect(() => {
-    if (!loading && data.length === 1) setStore(data[0]);
-  }, [data, loading, setStore]);
+    if (loading) return;
+    if (data.length === 0) navigate("/onboarding");
+    if (data.length === 1) setStore(data[0]);
+  }, [data, loading, navigate, setStore]);
 
   return (
     <div>

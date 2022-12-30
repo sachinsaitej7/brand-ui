@@ -5,7 +5,7 @@ import { Card } from "antd";
 const StyledCard = styled(Card)`
   background-color: transparent;
   width: ${(props) => (props.variant === "small" ? "110px" : "164px")};
-  height: auto;
+  height: ${(props) => (props.variant === "small" ? "156px" : "220px")};
   border: none;
   cursor: pointer;
   align-self: center;
@@ -20,14 +20,14 @@ const StyledCard = styled(Card)`
   .ant-card-cover img {
     border-radius: ${(props) => props.theme.borderRadius[2]};
     width: ${(props) => (props.variant === "small" ? "110px" : "164px")};
-    height: auto;
+    height: ${(props) => (props.variant === "small" ? "156px" : "220px")};
   }
 `;
 
 const ImageContainer = styled.img``;
 
 const ImageCover = ({ imgUrl, variant }) => (
-  <ImageContainer src={imgUrl} variant={variant} />
+  <ImageContainer src={`${imgUrl}`} variant={variant} />
 );
 
 const ProductCard = ({ thumbnail, onClick = () => { } }) => {

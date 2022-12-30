@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Typography } from "antd";
 
 //images
-import { LogoutOutlined, CloseOutlined } from "@ant-design/icons";
-
-import { ReactComponent as Logo } from "../../assets/common/logo-mobile.svg";
+import { LogoutOutlined } from "@ant-design/icons";
+import { ReactComponent as Logo } from "../../assets/common/seller-logo.svg";
 
 const TopBarContainer = styled.div`
   width: 100%;
@@ -22,7 +20,7 @@ const TopBarContainer = styled.div`
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10;
 `;
 
 const StyledLogoContainer = styled.div`
@@ -36,23 +34,12 @@ const StyledLogoContainer = styled.div`
 const TopBar = ({ handleClick = () => {}, addNew }) => {
   return (
     <TopBarContainer>
-      {addNew ? (
-        <>
-          <Typography.Title level={4} style={{ margin: 0 }}>
-            Add new product
-          </Typography.Title>
-          <CloseOutlined onClick={handleClick} />
-        </>
-      ) : (
-        <>
-          <StyledLogoContainer>
-            <Link to='/'>
-              <Logo />
-            </Link>
-          </StyledLogoContainer>
-          <LogoutOutlined onClick={handleClick} />
-        </>
-      )}
+      <StyledLogoContainer>
+        <Link to='/'>
+          <Logo width='75px' height='34px' />
+        </Link>
+      </StyledLogoContainer>
+      <LogoutOutlined onClick={handleClick} />
     </TopBarContainer>
   );
 };

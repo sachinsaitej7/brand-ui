@@ -1,17 +1,26 @@
 import React, { useEffect } from "react";
-import { Typography } from "antd";
+import styled, { useTheme } from "styled-components";
+import { Typography, App } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { signInWithPhoneNumber, RecaptchaVerifier } from "firebase/auth";
 
 import { getFirebase } from "../../firebase";
-import LoginForm from "../../shared-components/LoginForm";
+import { useSendOtp, useVerifyOtp } from "./hooks";
 import { PageContainer } from "../../styled-components";
+import VerifyOtpForm from "./VerifyOtpForm";
+import SendOtpForm from "./SendOtpForm";
+
+const StyledContainer = styled(PageContainer)``;
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const theme = useTheme();
   const { auth } = getFirebase();
+  const { message } = App.useApp();
   const [user, loading] = useAuthState(auth);
+  const [sendOtp, sendOtpData] = useSendOtp();
+  const [verifyOtp, verifyOtpData] = useVerifyOtp();
+  const { verificationId, phoneNumber } = sendOtpData;
 
   useEffect(() => {
     if (user !== null && !loading) {
@@ -19,46 +28,46 @@ const LoginPage = () => {
     }
   }, [user, navigate, loading]);
 
-  const handleSignInWithPhone = async (phoneNumber) => {
-    let validPhoneNumber = phoneNumber.replace(/[^\d]/g, "");
-    validPhoneNumber = `+91${validPhoneNumber}`;
-    window.recaptchaVerifier =
-      window.recaptchaVerifier ||
-      new RecaptchaVerifier(
-        "sign-in-button",
-        {
-          size: "invisible",
-        },
-        auth
-      );
-    const appVerifier = window.recaptchaVerifier;
+  const handleResendOtp = async () => {
     try {
-      const result = await signInWithPhoneNumber(
-        auth,
-        validPhoneNumber,
-        appVerifier
-      );
-      window.confirmationResult = result;
+      await sendOtp(phoneNumber, true);
+      message.success("OTP sent successfully");
     } catch (error) {
-      console.log(error);
-      throw error;
-    }
-  };
-
-  const verifyOtp = async (code) => {
-    try {
-      await window.confirmationResult.confirm(code);
-    } catch (error) {
-      console.log(error);
-      throw error;
+      message.error("OTP sending failed");
     }
   };
 
   return (
-    <PageContainer>
-      <Typography.Title level={3}>Login</Typography.Title>
-      <LoginForm sendOtp={handleSignInWithPhone} verifyOtp={verifyOtp} />
-    </PageContainer>
+    <StyledContainer>
+      {verificationId ? (
+        <>
+          <Typography.Title level={4} style={{ marginTop: theme.space[4] }}>
+            Enter OTP to verify
+          </Typography.Title>
+          <Typography.Paragraph style={{ color: "#8C8C8C" }}>
+            {`Please enter the OTP code that we’ve sent to your registered phone
+            number ${phoneNumber}`}
+          </Typography.Paragraph>
+          <VerifyOtpForm
+            verifyOtp={verifyOtp}
+            resendOtp={handleResendOtp}
+            {...verifyOtpData}
+            verificationId={verificationId}
+          />
+        </>
+      ) : (
+        <>
+          <Typography.Title level={4} style={{ marginTop: theme.space[4] }}>
+            Enter your phone number
+          </Typography.Title>
+          <Typography.Paragraph style={{ color: "#8C8C8C" }}>
+            You can create a new account or log in if you’re already a user of
+            Clock Sellers
+          </Typography.Paragraph>
+          <SendOtpForm sendOtp={sendOtp} {...sendOtpData} />
+        </>
+      )}
+    </StyledContainer>
   );
 };
 

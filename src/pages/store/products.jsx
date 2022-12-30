@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import styled, { useTheme } from "styled-components";
-// import InfiniteScroll from "react-infinite-scroll-component";
-import { Image, Typography } from "antd";
+import { Image, Typography, Tabs } from "antd";
 
 import store from "../../store";
 
@@ -29,11 +28,25 @@ const Collections = styled.div`
   overflow: auto;
   @media (min-width: 330px) {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: ${(props) => props.theme.space[2]};
+    gap: ${(props) => props.theme.space[3]};
   }
 
   @media (min-width: 430px) {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+`;
+
+const StyledTabs = styled(Tabs)`
+  width: 100%;
+  .ant-tabs-tab-active {
+    font-weight: ${(props) => props.theme.fontWeights.semibold};
+  }
+  .ant-tabs-nav {
+    margin-bottom: ${(props) => props.theme.space[3]};
   }
 `;
 
@@ -47,7 +60,6 @@ const Products = () => {
   const [instantProducts, iLoading] = useInstantProducts(store?.id);
   const [onDemandProducts, dLoading] = useOnDemandProducts(store?.id);
 
-
   useEffect(() => {
     if (active === "instant") {
       instantProducts && setProducts(instantProducts);
@@ -60,56 +72,56 @@ const Products = () => {
     setActive(type);
   };
 
+  const getChildren = () => (
+    <Collections
+      dataLength={products.length}
+      next={() => {}}
+      hasMore={false}
+      loader={<Spinner />}
+      key={active}
+    >
+      {products.map((product, index) => {
+        return (
+          <ProductCard
+            key={product.id + "-" + index}
+            {...product}
+            onClick={() => {
+              setActiveProduct(product);
+              setOpen(true);
+            }}
+          />
+        );
+      })}
+    </Collections>
+  );
+
   return (
     <StyledContainer>
-      <div
-        style={{
-          display: "flex",
-          padding: theme.space[3],
-          justifyContent: "space-around",
-        }}
-      >
-        <Typography.Text
-          onClick={() => handleActive("instant")}
-          strong
-          style={{ color: active === "instant" ? "red" : "" }}
-        >
-          Get in 60 mins
-        </Typography.Text>
-        <Typography.Text
-          onClick={() => handleActive("on-demand")}
-          strong
-          style={{ color: active === "on-demand" ? "red" : "" }}
-        >
-          Made to order
-        </Typography.Text>
-      </div>
-      <div>
-        {iLoading || dLoading ? (
-          <Spinner />
-        ) : (
-          <Collections
-            dataLength={products.length}
-            next={() => {}}
-            hasMore={false}
-            loader={<Spinner />}
-            key={active}
-          >
-            {products.map((product, index) => {
-              return (
-                <ProductCard
-                  key={product.id + "-" + index}
-                  {...product}
-                  onClick={() => {
-                    setActiveProduct(product);
-                    setOpen(true);
-                  }}
-                />
-              );
-            })}
-          </Collections>
-        )}
-      </div>
+      {iLoading || dLoading ? (
+        <Spinner />
+      ) : (
+        <StyledTabs
+          activeKey={active}
+          onChange={(key) => handleActive(key)}
+          size='small'
+          centered
+          items={[
+            {
+              key: "instant",
+              label: "Instant",
+              children: getChildren(),
+              forceRender: true,
+            },
+            {
+              key: "on-demand",
+              label: "Made to order",
+              children: getChildren(),
+              forceRender: true,
+            },
+          ]}
+        />
+      )}
+
       {activeProduct && (
         <FilterDrawer
           title={activeProduct.name}

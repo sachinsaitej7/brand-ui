@@ -36,7 +36,7 @@ export const useUploadImage = () => {
         onProgress({ percent: progress });
       },
       (error) => {
-        console.log(error, "error");
+        console.log(error);
         onError(error);
         setError(error);
       },
