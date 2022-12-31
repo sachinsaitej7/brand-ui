@@ -1,9 +1,9 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useTheme } from "styled-components";
 import { Typography, App } from "antd";
 
-import { addBrandListing, addBrandUser, useBrandListingById } from "./hooks";
+import { addBrandListing, addBrandUser } from "./hooks";
 import { OnboardingContext } from "./context";
 
 import {
@@ -18,21 +18,13 @@ import { getFirebase } from "../../firebase";
 const Step1 = () => {
   const theme = useTheme();
   const { message } = App.useApp();
-  const { nextStep, setBrandId, brandId } = useContext(OnboardingContext);
-  const [brand] = useBrandListingById(brandId);
+  const { nextStep, setBrandId } = useContext(OnboardingContext);
   const [name, setName] = useState("");
   const [logo, setLogo] = useState("");
   const [loading, setLoading] = useState(false);
 
   const { auth } = getFirebase();
   const [user] = useAuthState(auth);
-
-  useEffect(() => {
-    if (brand) {
-      setName(brand.name);
-      setLogo(brand.logo);
-    }
-  }, [brand]);
 
   const createNewBrand = async () => {
     if (!name || !logo) {

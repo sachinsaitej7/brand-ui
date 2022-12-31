@@ -37,7 +37,6 @@ export const addBrandListing = async (data) => {
     status: false,
     image: null,
     description: null,
-    tags: [],
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   };

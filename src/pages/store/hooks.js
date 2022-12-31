@@ -8,6 +8,7 @@ import {
   where,
   addDoc,
   deleteDoc,
+  updateDoc,
   doc,
   serverTimestamp,
   collectionGroup,
@@ -72,10 +73,32 @@ export const useOnDemandProducts = (brandId) => {
   return data;
 };
 
+// hook to get product variants by product id
+export const useProductVariantsByProductId = (productId = "") => {
+  const productVariantQuery = query(
+    productVariantRef,
+    where("productId", "==", productId)
+  ).withConverter(idConverter);
+  const data = useCollectionData(productVariantQuery);
+  return data;
+};
+
 // delete product data by id
 export const deleteProduct = async (id) => {
   const productDoc = doc(db, "product", id);
   await deleteDoc(productDoc);
+};
+
+// delete product variant data by id
+export const deleteProductVariant = async (id) => {
+  const productVariantDoc = doc(db, "productVariant", id);
+  await deleteDoc(productVariantDoc);
+};
+
+// delete product variants by ids
+export const deleteProductVariants = async (ids) => {
+  const productVariantDocs = ids.map((id) => doc(db, "productVariant", id));
+  await Promise.all(productVariantDocs.map((doc) => deleteDoc(doc)));
 };
 
 // get all subcategory data
@@ -175,3 +198,11 @@ export const addProductVariants = async (data, productId) => {
   );
   return;
 };
+
+// update product variant data with product id
+export const updateProductVariant = async (productId, data) => {
+  const productVariantDoc = doc(db, "productVariant", productId);
+  await updateDoc(productVariantDoc, { ...data, updatedAt: serverTimestamp() });
+  return;
+};
+  

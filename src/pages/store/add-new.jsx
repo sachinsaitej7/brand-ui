@@ -50,6 +50,7 @@ const StyledContainer = styled(PageContainer)`
   position: absolute;
   padding-bottom: ${(props) => props.theme.space[9]};
   min-height: 100vh;
+  max-width: 768px;
   background-color: ${(props) => props.theme.bg.dark};
   animation: slide-up 0.5s ease-in-out;
   z-index: 100;
@@ -209,6 +210,15 @@ export default function AddNew({ store }) {
     setSizeGuide(imagesUrls[0]);
   };
 
+  const parentCategory = categories?.find(
+    (category) => category.id === selectedSubcategory?.parentId
+  );
+
+  const isParent = values?.find((value) => {
+    if (type === "category") return categories?.find((c) => c.id === value.id);
+    else return sizes?.find((s) => s.label === value.label);
+  });
+
   return (
     <StyledContainer>
       <TopBarContainer>
@@ -267,7 +277,8 @@ export default function AddNew({ store }) {
         </Typography.Title>
         <div style={{ display: "flex", alignItems: "center" }}>
           <Typography.Text style={{ color: "#8C8C8C" }}>
-            {selectedSubcategory?.name}
+            {parentCategory && `${parentCategory?.name} /`}{" "}
+            {selectedSubcategory?.name || "Select"}
           </Typography.Text>
           <RightArrow style={{ marginLeft: theme.space[3] }} width='20px' />
         </div>
@@ -359,7 +370,9 @@ export default function AddNew({ store }) {
         onClose={() => setOpen(false)}
         title={
           <div style={{ display: "flex" }}>
-            <LeftArrow width={20} onClick={() => handleCardClick(type)} />
+            {!isParent && (
+              <LeftArrow width={20} onClick={() => handleCardClick(type)} />
+            )}
             <Typography.Title
               level={4}
               style={{ margin: theme.space[0] + " " + theme.space[3] }}

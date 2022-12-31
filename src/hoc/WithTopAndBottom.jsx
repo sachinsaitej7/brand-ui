@@ -46,7 +46,7 @@ const WithTopAndBottom = ({ children }) => {
 
   return (
     <>
-      <TopBar handleClick={() => signOut()} />
+      <TopBar handleClick={user ? () => signOut() : null} />
       {loading ? <Spinner /> : children}
       {!addNew && <Footer />}
     </>

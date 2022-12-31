@@ -31,7 +31,7 @@ const StyledLogoContainer = styled.div`
   grid-gap: ${(props) => props.theme.space[1]};
 `;
 
-const TopBar = ({ handleClick = () => {}, addNew }) => {
+const TopBar = ({ handleClick }) => {
   return (
     <TopBarContainer>
       <StyledLogoContainer>
@@ -39,7 +39,7 @@ const TopBar = ({ handleClick = () => {}, addNew }) => {
           <Logo width='75px' height='34px' />
         </Link>
       </StyledLogoContainer>
-      <LogoutOutlined onClick={handleClick} />
+      {handleClick && <LogoutOutlined onClick={handleClick} />}
     </TopBarContainer>
   );
 };

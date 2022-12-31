@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTheme } from "styled-components";
 import { Form, Typography, Input, Row, Col, App } from "antd";
 
 import { StyledButton } from "../../styled-components";
@@ -8,8 +9,9 @@ const SendOtpForm = ({
   loading: sendOtpLoading,
   error: sendOtpError,
 }) => {
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const { message } = App.useApp();
+  const theme = useTheme();
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const { message } = App.useApp();
 
   useEffect(() => {
     if (sendOtpError) {
@@ -24,7 +26,11 @@ const SendOtpForm = ({
   };
 
   return (
-    <Form layout='vertical' onFinish={() => sendOtp(phoneNumber)}>
+    <Form
+      layout='vertical'
+      onFinish={() => sendOtp(phoneNumber)}
+      style={{ marginTop: theme.space[8] }}
+    >
       <Form.Item
         label={
           <Typography.Title level={5} style={{ margin: "0px" }}>
@@ -64,8 +70,6 @@ const SendOtpForm = ({
           Continue
         </StyledButton>
       </Form.Item>
-      By logging in or signing up, you are agreeing to our Terms of Service and
-      Privacy Policy
     </Form>
   );
 };

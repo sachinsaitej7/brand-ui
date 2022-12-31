@@ -1,18 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
 import styled, { useTheme } from "styled-components";
-import { Image, Typography, Tabs } from "antd";
+import { Typography, Tabs } from "antd";
 
 import store from "../../store";
 
 import {
   useInstantProducts,
   useOnDemandProducts,
-  deleteProduct,
 } from "./hooks";
 import ProductCard from "../../shared-components/ProductCard";
 import Spinner from "../../shared-components/Spinner";
 import FilterDrawer from "../../shared-components/Drawer";
-import { StyledButton } from "../../styled-components";
+import ProductView from "./product-view";
 
 const { StoreContext } = store;
 
@@ -72,28 +71,45 @@ const Products = () => {
     setActive(type);
   };
 
-  const getChildren = () => (
-    <Collections
-      dataLength={products.length}
-      next={() => {}}
-      hasMore={false}
-      loader={<Spinner />}
-      key={active}
-    >
-      {products.map((product, index) => {
-        return (
-          <ProductCard
-            key={product.id + "-" + index}
-            {...product}
-            onClick={() => {
-              setActiveProduct(product);
-              setOpen(true);
-            }}
-          />
-        );
-      })}
-    </Collections>
-  );
+  const getChildren = () => {
+    if (!products) return <Spinner />;
+    if (products.length === 0)
+      return (
+        <Typography.Text
+          style={{
+            color: theme.colors.text,
+            textAlign: "center",
+            display: "block",
+            margin: theme.space[6],
+          }}
+        >
+          No products found
+        </Typography.Text>
+      );
+
+    return (
+      <Collections
+        dataLength={products.length}
+        next={() => {}}
+        hasMore={false}
+        loader={<Spinner />}
+        key={active}
+      >
+        {products.map((product, index) => {
+          return (
+            <ProductCard
+              key={product.id + "-" + index}
+              {...product}
+              onClick={() => {
+                setActiveProduct(product);
+                setOpen(true);
+              }}
+            />
+          );
+        })}
+      </Collections>
+    );
+  };
 
   return (
     <StyledContainer>
@@ -124,49 +140,21 @@ const Products = () => {
 
       {activeProduct && (
         <FilterDrawer
-          title={activeProduct.name}
           open={open}
+          title={null}
           onClose={() => {
             setActiveProduct(null);
             setOpen(false);
           }}
+          closable
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
+          <ProductView
+            product={activeProduct}
+            handleClose={() => {
+              setActiveProduct(null);
+              setOpen(false);
             }}
-          >
-            <Image
-              src={activeProduct.thumbnail}
-              width='90%'
-              height='auto'
-              style={{
-                maxHeight: "300px",
-                borderRadius: theme.borderRadius[2],
-                margin: theme.space[3],
-              }}
-            ></Image>
-            <Typography.Paragraph>
-              {activeProduct.description}
-            </Typography.Paragraph>
-            <Typography.Paragraph>
-              {activeProduct.price.currentPrice}
-            </Typography.Paragraph>
-            <StyledButton
-              style={{ backgroundColor: "red" }}
-              onClick={() => {
-                deleteProduct(activeProduct.id).then(() => {
-                  setActiveProduct(null);
-                  setOpen(false);
-                });
-              }}
-            >
-              Delete
-            </StyledButton>
-          </div>
+          />
         </FilterDrawer>
       )}
     </StyledContainer>

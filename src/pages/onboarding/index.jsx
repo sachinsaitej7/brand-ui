@@ -93,7 +93,7 @@ const OnboardingPage = () => {
                 return <StyledStep key={i} active={step > i}></StyledStep>;
               })}
           </StyledStepContainer>
-          {step > 1 && <LeftArrow className='back' onClick={prevStep} />}
+          {step > 2 && <LeftArrow className='back' onClick={prevStep} />}
           <div style={{ width: "100%" }}>
             <AnimatePresence initial={false} custom={direction}>
               <motion.div

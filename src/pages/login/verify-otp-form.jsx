@@ -89,6 +89,7 @@ const VerifyOtpForm = ({
       layout='vertical'
       form={form}
       onFinish={() => verifyOtp(verificationId, otp.join(""))}
+      style={{ marginTop: theme.space[7] }}
     >
       <Form.Item
         label={

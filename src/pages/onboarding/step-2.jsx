@@ -50,7 +50,7 @@ const Step2 = () => {
   const [brandListing] = useBrandListingById(brandId);
 
   useEffect(() => {
-    brandListing && setTags(brandListing.tags);
+    brandListing?.tags && setTags(brandListing.tags);
   }, [brandListing]);
 
   const handleAdd = () => {
@@ -113,7 +113,7 @@ const Step2 = () => {
         >
           {tags.map((tag) => {
             return (
-              <StyledTag key={tag} closable onClose={handleRemove}>
+              <StyledTag key={tag} closable onClose={() => handleRemove(tag)}>
                 {tag}
               </StyledTag>
             );

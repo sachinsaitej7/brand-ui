@@ -73,7 +73,7 @@ const Step4 = () => {
             )
           }
           style={{ width: "100%" }}
-          loading={loading || brandLoading}
+          loading={brandLoading}
         >
           <Typography.Text>{brand?.description}</Typography.Text>
           <Typography.Text

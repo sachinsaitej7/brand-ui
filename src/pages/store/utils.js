@@ -20,7 +20,7 @@ export const createProductData = (data) => {
     subcategory: omit(data.subcategory, "createdAt", "updatedAt"),
     category: omit(data.category, "createdAt", "updatedAt"),
     superSubcategory: null,
-    brand: omit(data.brand, "createdAt", "updatedAt"),
+    brand: omit(data.brand, "createdAt", "updatedAt", "address", "tags"),
     thumbnail: data.images[0],
     status: true,
     delivery: data.delivery,

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled, { useTheme } from "styled-components";
 import { Typography, App } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -7,10 +7,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { getFirebase } from "../../firebase";
 import { useSendOtp, useVerifyOtp } from "./hooks";
 import { PageContainer } from "../../styled-components";
-import VerifyOtpForm from "./VerifyOtpForm";
-import SendOtpForm from "./SendOtpForm";
+import Login from "./login";
+import VerifyOtpForm from "./verify-otp-form";
+import SendOtpForm from "./send-otp-form";
 
-const StyledContainer = styled(PageContainer)``;
+const StyledContainer = styled(PageContainer)`
+  padding-top: ${(props) => props.theme.space[5]};
+`;
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -21,6 +24,7 @@ const LoginPage = () => {
   const [sendOtp, sendOtpData] = useSendOtp();
   const [verifyOtp, verifyOtpData] = useVerifyOtp();
   const { verificationId, phoneNumber } = sendOtpData;
+  const [loginMode, setLoginMode] = useState(false);
 
   useEffect(() => {
     if (user !== null && !loading) {
@@ -36,6 +40,13 @@ const LoginPage = () => {
       message.error("OTP sending failed");
     }
   };
+
+  if (!loginMode)
+    return (
+      <StyledContainer>
+        <Login handleClick={() => setLoginMode(true)} />
+      </StyledContainer>
+    );
 
   return (
     <StyledContainer>

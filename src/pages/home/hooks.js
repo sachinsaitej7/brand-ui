@@ -1,6 +1,6 @@
 import { getFirebase } from "../../firebase";
 
-import { collection, query, where, orderBy, doc } from "firebase/firestore";
+import { collection, query, where, doc } from "firebase/firestore";
 
 import {
   useCollectionDataOnce,
@@ -30,7 +30,6 @@ export const useBrandsByIds = (ids = []) => {
   const brandQuery = query(
     brandRef,
     where("__name__", "in", ids.slice(0, 10)),
-    // orderBy("updatedAt", "desc")
   );
   const data = useCollectionDataOnce(brandQuery);
   return data;
