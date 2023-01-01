@@ -17,8 +17,12 @@ export const StyledInput = styled(InputNumber)`
   font-weight: ${(props) => props.theme.fontWeights.semibold};
   font-size: ${(props) => props.theme.fontSizes[4]};
 
-  @media (max-width: 360px) {
+  @media (max-width: 330px) {
     width: 40px;
+  }
+
+  @media (max-width: 360px) {
+    width: 44px;
   }
 `;
 
