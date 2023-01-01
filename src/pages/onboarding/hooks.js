@@ -99,10 +99,21 @@ export const getBrowserLocation = () => {
 
 // get address from lat and long
 export const getAddressFromLatLong = async ({ latitude, longitude }) => {
-  const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  try {
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    if (
+      data.status === "ZERO_RESULTS" ||
+      data.status === "OVER_QUERY_LIMIT" ||
+      data.status === "REQUEST_DENIED"
+    ) {
+      return null;
+    }
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 // get lat and long from address

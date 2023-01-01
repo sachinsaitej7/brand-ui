@@ -16,6 +16,10 @@ export const StyledInput = styled(InputNumber)`
   padding: ${(props) => props.theme.space[2]};
   font-weight: ${(props) => props.theme.fontWeights.semibold};
   font-size: ${(props) => props.theme.fontSizes[4]};
+
+  @media (max-width: 360px) {
+    width: 40px;
+  }
 `;
 
 const VerifyOtpForm = ({
@@ -110,6 +114,7 @@ const VerifyOtpForm = ({
               onChange={handleChange(index)}
               onPaste={handlePaste}
               maxLength={1}
+              type='number'
             />
           ))}
         </Row>

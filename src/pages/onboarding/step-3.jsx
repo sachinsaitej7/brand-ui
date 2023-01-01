@@ -105,9 +105,10 @@ const Step3 = () => {
       setOpen(true);
       const location = await getBrowserLocation();
       const data = await getAddressFromLatLong(location);
-      setGeocodeData(parseGeocodeData(data));
+      data && setGeocodeData(parseGeocodeData(data));
     } catch (error) {
       console.log(error);
+      message.warning("Address on not found");
     }
     setLoading(false);
   };
