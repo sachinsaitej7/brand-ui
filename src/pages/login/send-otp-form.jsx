@@ -45,7 +45,7 @@ const SendOtpForm = ({
         <Input.Group size='large'>
           <Row gutter={8}>
             <Col span={4}>
-              <Input value='+91' readOnly />
+              <Input value='+91' readOnly style={{padding: theme.space[3]}} />
             </Col>
             <Col span={20}>
               <Input
@@ -55,6 +55,7 @@ const SendOtpForm = ({
                 maxLength={10}
                 onChange={handlePhoneNumberChange}
                 value={phoneNumber}
+                style={{padding: theme.space[3]}}
               />
             </Col>
           </Row>
