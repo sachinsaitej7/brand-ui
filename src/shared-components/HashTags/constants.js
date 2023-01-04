@@ -1,8 +1,1 @@
-export const HASH_TAGS = [
-  "fabric",
-  "color",
-  "size",
-  "brand",
-  "style",
-  "occasion",
-];
+export const HASH_TAGS = ["fabric", "color", "brand", "style", "occasion", "others"];

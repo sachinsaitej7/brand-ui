@@ -50,7 +50,7 @@ const LoginPage = () => {
 
   return (
     <StyledContainer>
-      {verificationId ? (
+      {verificationId && (
         <>
           <Typography.Title level={4} style={{ marginTop: theme.space[4] }}>
             Enter OTP to verify
@@ -66,18 +66,17 @@ const LoginPage = () => {
             verificationId={verificationId}
           />
         </>
-      ) : (
-        <>
-          <Typography.Title level={4} style={{ marginTop: theme.space[4] }}>
-            Enter your phone number
-          </Typography.Title>
-          <Typography.Paragraph style={{ color: "#8C8C8C" }}>
-            You can create a new account or log in if you’re already a user of
-            Clock Sellers
-          </Typography.Paragraph>
-          <SendOtpForm sendOtp={sendOtp} {...sendOtpData} />
-        </>
       )}
+      <div style={{ display: verificationId ? "none" : null }}>
+        <Typography.Title level={4} style={{ marginTop: theme.space[4] }}>
+          Enter your phone number
+        </Typography.Title>
+        <Typography.Paragraph style={{ color: "#8C8C8C" }}>
+          You can create a new account or log in if you’re already a user of
+          Clock Sellers
+        </Typography.Paragraph>
+        <SendOtpForm sendOtp={sendOtp} {...sendOtpData} />
+      </div>
     </StyledContainer>
   );
 };

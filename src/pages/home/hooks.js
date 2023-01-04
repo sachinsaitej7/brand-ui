@@ -20,7 +20,7 @@ const brandUserRef = collection(db, "brandUser");
 
 // hook to get brandUser data
 export const useBrandUser = (id) => {
-  const brandUserDoc = doc(db, "brandUser", id);
+  const brandUserDoc = doc(db, "brandUser", id).withConverter(idConverter);
   const data = useDocumentDataOnce(brandUserDoc);
   return data;
 };

@@ -17,8 +17,15 @@ const brandUserRef = collection(db, "brandUser");
 
 // function to get brand listing by id
 
+const idConverter = {
+  fromFirestore: function (snapshot, options) {
+    const data = snapshot.data(options);
+    return { ...data, id: snapshot.id };
+  },
+};
+
 export const useBrandListingById = (id) => {
-  const brandDoc = doc(db, "brand", id);
+  const brandDoc = doc(db, "brand", id).withConverter(idConverter);
   const data = useDocumentData(brandDoc);
   return data;
 };

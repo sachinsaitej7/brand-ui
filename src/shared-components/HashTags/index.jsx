@@ -34,7 +34,7 @@ const HashTags = ({ onChange = () => {} }) => {
                 type='text'
                 prefix='#'
                 placeholder={tag}
-                style={{ width: tag.length * 16, height: 25 }}
+                style={{ width: tag.length * 15.5, height: 25 }}
                 onBlur={(e) => handleInputConfirm(e, index)}
               />
             </div>
