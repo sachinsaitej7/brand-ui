@@ -21,21 +21,19 @@ export const useSendOtp = () => {
     setPhoneNumber(phoneNumber);
     try {
       const { auth } = getFirebase();
-      window.recaptchaVerifier =
-        window.recaptchaVerifier ||
-        new RecaptchaVerifier(
-          "sign-in-button",
-          {
-            size: "invisible",
-          },
-          auth
-        );
+      window.recaptchaVerifier = new RecaptchaVerifier(
+        resend ? "recaptcha-container-resend" : "sign-in-button",
+        {
+          size: "invisible",
+        },
+        auth
+      );
       const appVerifier = window.recaptchaVerifier;
       setLoading(true);
       const confirmation = await signInWithPhoneNumber(
         auth,
         `+91${phoneNumber}`,
-        resend ? null : appVerifier
+        appVerifier
       );
       setVerificationId(confirmation.verificationId);
     } catch (error) {

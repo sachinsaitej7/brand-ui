@@ -39,6 +39,9 @@ function enableOffline({ db, app, auth, storage, appCheck }) {
 window.FIREBASE_APPCHECK_DEBUG_TOKEN =
   process.env.NODE_ENV === "development" ? true : false;
 
+// eslint-disable-next-line no-restricted-globals
+self.FIREBASE_APPCHECK_DEBUG_TOKEN = window.FIREBASE_APPCHECK_DEBUG_TOKEN;
+
 const appCheckConfig = {
   provider: new ReCaptchaV3Provider("6LcfyswjAAAAAADeNjYPVGqhRE3O0XYIHtOmtHAF"),
   isTokenAutoRefreshEnabled: true,

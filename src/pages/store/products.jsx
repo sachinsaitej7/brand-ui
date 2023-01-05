@@ -6,7 +6,7 @@ import store from "../../store";
 
 import {
   useInstantProducts,
-  useOnDemandProducts,
+  // useOnDemandProducts,
 } from "./hooks";
 import ProductCard from "../../shared-components/ProductCard";
 import Spinner from "../../shared-components/Spinner";
@@ -57,15 +57,13 @@ const Products = () => {
   const [active, setActive] = useState("instant");
   const { store } = useContext(StoreContext);
   const [instantProducts, iLoading] = useInstantProducts(store?.id);
-  const [onDemandProducts, dLoading] = useOnDemandProducts(store?.id);
+  // const [onDemandProducts, dLoading] = useOnDemandProducts(store?.id);
 
   useEffect(() => {
     if (active === "instant") {
       instantProducts && setProducts(instantProducts);
-    } else {
-      onDemandProducts && setProducts(onDemandProducts);
     }
-  }, [instantProducts, onDemandProducts, active]);
+  }, [instantProducts, active]);
 
   const handleActive = (type) => {
     setActive(type);
@@ -73,6 +71,20 @@ const Products = () => {
 
   const getChildren = () => {
     if (!products) return <Spinner />;
+    if (active === "orders")
+      return (
+        <Typography.Text
+          style={{
+            color: theme.colors.text,
+            textAlign: "center",
+            display: "block",
+            margin: theme.space[6],
+          }}
+        >
+          No orders found
+        </Typography.Text>
+      );
+
     if (products.length === 0)
       return (
         <Typography.Text
@@ -113,7 +125,7 @@ const Products = () => {
 
   return (
     <StyledContainer>
-      {iLoading || dLoading ? (
+      {iLoading ? (
         <Spinner />
       ) : (
         <StyledTabs
@@ -124,13 +136,13 @@ const Products = () => {
           items={[
             {
               key: "instant",
-              label: "Instant",
+              label: "Products",
               children: getChildren(),
               forceRender: true,
             },
             {
-              key: "on-demand",
-              label: "Made to order",
+              key: "orders",
+              label: "Orders",
               children: getChildren(),
               forceRender: true,
             },

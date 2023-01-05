@@ -140,6 +140,7 @@ const VerifyOtpForm = ({
             }}
             underline
             disabled={timer > 0}
+            id='recaptcha-container-resend'
           >
             Resend OTP
           </Typography.Link>

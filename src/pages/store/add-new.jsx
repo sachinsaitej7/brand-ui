@@ -341,7 +341,7 @@ export default function AddNew({ store }) {
           value={deliveryTime}
         >
           <Radio value='instant'>1 hr Delivery</Radio>
-          <Radio value='on-demand'>Made to delivery</Radio>
+          {/* <Radio value='on-demand'>Made to delivery</Radio> */}
         </Radio.Group>
       </StyledCard>
       <StyledCard>
